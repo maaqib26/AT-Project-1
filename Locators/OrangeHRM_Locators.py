@@ -1,3 +1,6 @@
+"""
+OrangeHRM_Locators.py - Script to store web element locators
+"""
 class Locators:
     username = "username"
     password = "password"
