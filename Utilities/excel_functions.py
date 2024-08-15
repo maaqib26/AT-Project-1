@@ -1,3 +1,7 @@
+"""
+excel_functions.py - Script to run excel function to extract test data from excel sheet
+"""
+
 import openpyxl
 from openpyxl import load_workbook
 
@@ -32,7 +36,6 @@ class Excel_Operations:
         test_sheet = workbook[self.sheet_number]
         test_sheet.cell(row=row_number,column=column_number).value = data
         workbook.save(self.filename)
-#         excel_obj.write_data(row_number=start_row + i, column_number=8, data=data[i])
 
 
 
